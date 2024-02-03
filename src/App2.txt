@@ -1,0 +1,74 @@
+import React, { useState } from 'react';
+import './App.css';
+import PropTypes from 'prop-types';
+
+export const SignUp = ({ pressed = false, className }) => {
+  return (
+    <div className={`signup pressed-${pressed} ${className}`}>
+      <div className="div">Sign Up</div>
+    </div>
+  );
+};
+
+SignUp.propTypes = {
+  pressed: PropTypes.bool,
+  className: PropTypes.string,
+};
+
+function App() {
+  const [count, setCount] = useState(0);
+
+  return (
+    <div>
+      <div className="header">
+        <h1>FourEvYear</h1>
+        <p>Create a Four Year Plan with One Click!</p>
+      </div>
+
+      <div className="navbar">
+        <a href="#">Home</a>
+        <a href="#">Account</a>
+        <a href="#">Contact Us</a>
+        <a href="#" className="right">Log In</a>
+        <SignUp className="right" />
+      </div>
+
+      <div className="row">
+        <div className="side">
+          <h2>About Us</h2>
+          <p>Four Columbia University Undergrad Students Wanted to make a website that makes creating a schedule less stressful...</p>
+          <h3>MORE INFO</h3>
+          <p>MORE INFO</p>
+          <div className="fakeimg1" style={{ height: '60px' }}>Resources for Mental Health</div>
+          <br />
+          <div className="fakeimg2" style={{ height: '60px' }}>Resources Provided by CU</div>
+          <br />
+        </div>
+        <div className="main">
+          <h2>How It Works</h2>
+          <h5>Updated as of Today</h5>
+          <div className="fakeimg4" style={{ height: '200px' }}></div>
+          <h2>Step 1</h2>
+          <p>Make an Account</p>
+          <br />
+          <h2>Step 2</h2>
+          <p>Fill out a profile</p>
+          <div className="fakeimg5" style={{ height: '200px' }}></div>
+          <h2>Step 3</h2>
+          <p>Declare a Major, Then See Your Plan!</p>
+        </div>
+      </div>
+
+      <div className="footer">
+        <h2>Footer</h2>
+      </div>
+    </div>
+  );
+}
+
+export default App;
+
+
+
+
+

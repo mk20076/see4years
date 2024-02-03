@@ -1,0 +1,40 @@
+.login {
+    align-items: center;
+    border: 1px solid;
+    border-color: #000000;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 39px;
+    justify-content: flex-end;
+    padding: 2px 0px;
+    position: relative;
+    width: 69px;
+  }
+  
+  .login .text-wrapper {
+    color: #000000;
+    font-family: "News Cycle", Helvetica;
+    font-size: 25px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: -7px;
+    position: relative;
+    text-align: center;
+    width: fit-content;
+  }
+  
+  .login.pressed-true {
+    background-color: #000000;
+  }
+  
+  .login:hover {
+    background-color: #0000006b;
+  }
+  
+  .login:hover .text-wrapper {
+    color: #f8f5f1;
+  }
+  
